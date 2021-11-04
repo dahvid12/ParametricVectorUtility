@@ -1,8 +1,9 @@
 <div id="top"></div>
-[![Contributors][contributors-shield]][https://github.com/dahvid12/ParametricVectorOps/graphs/contributors]
-[![Forks][forks-shield]][https://github.com/dahvid12/ParametricVectorOps/network/members]
-[![Issues][issues-shield]][https://github.com/dahvid12/ParametricVectorOps/issues]
-[![LinkedIn][linkedin-shield]][https://www.linkedin.com/in/david-martinez-6785b11a2/]
+
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Issues][issues-shield]][issues-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
 # ParametricVectorOps
 
@@ -49,7 +50,17 @@ http://pyopengl.sourceforge.net/
 6. Enter Final time 
 7. Use the Arrow keys to rotate the graph.
 8. Use Tables in Console to determine magnitudes and components.
-9. 
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
+[contributors-url]: https://github.com/dahvid12/ParametricVectorOps/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
+[forks-url]: https://github.com/dahvid12/ParametricVectorOps/network/members
+[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
+[issues-url]: https://github.com/dahvid12/ParametricVectorOps/issues
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/david-martinez-6785b11a2/
