@@ -2,6 +2,7 @@
 #
 # October 2021
 
+
 from OpenGL import GL
 from OpenGL.GL.ARB import invalidate_subdata
 import pygame
@@ -23,8 +24,7 @@ winM = 10
 def main():
         
     print("")
-    l = [["Vector Visualization", "3D drawing of Vector", 1], ["Vector +/-",
-                                                            "Add or Subtract Vectors", 2], ["Vector Function Over Time", "x(t), v(t), a(t)", 3]]
+    l = [["Vector Visualization", "3D drawing of Vector", 1], ["Vector +/-", "Add or Subtract Vectors", 2], ["Vector Function Over Time", "x(t), v(t), a(t)", 3]]
     table = tabulate(l, headers=['Function/Operation',
                     'Description', 'Code'], tablefmt='fancy_grid')
 
@@ -32,7 +32,6 @@ def main():
     # bool
     
     # init functions
-
 
     def formatVector(strV):
         vL = []
@@ -113,9 +112,9 @@ def main():
         di = di.replace("t", str(timeInst))
         dj = dj.replace("t", str(timeInst))
         dk = dk.replace("t", str(timeInst))
-        di = eval(di) / (winM)
-        dj = eval(dj) / (winM)
-        dk = eval(dk) / (winM)
+        di = eval(di) / (winM+1)
+        dj = eval(dj) / (winM+1)
+        dk = eval(dk) / (winM+1)
 
        # print(di)
        # print(dj)
@@ -169,7 +168,7 @@ def main():
 
         gluPerspective(45, (display[0]/display[1]), 0.1, 50.0)
 
-        glTranslate(0, 0, -3.3)
+        glTranslate(0, 0, -4)
         # glRotate(-45,0,0,0)
         glRotate(-90, 1, 0, 0)
         glRotate(-110, 0, 0, 1)
@@ -206,9 +205,8 @@ def main():
             rendVector(vecL)
             glClearColor(0.1, 0.1, 0.1, 1)
             pygame.display.flip()
-            pygame.time.wait(10)
-    #
-
+            pygame.time.wait(2)
+    
     
     def main2(vecL, final):
         global trK
@@ -243,7 +241,7 @@ def main():
         rendVector2(vecL)
         glClearColor(0.1, 0.1, 0.1, 1)
         pygame.display.flip()
-        pygame.time.wait(10)
+        pygame.time.wait(2)
         if (final == True):
             # print("directory")
             # print(pointDir)
@@ -296,7 +294,7 @@ def main():
             eval1 = ''
             y = 0
             a = len(x)
-            x += ' '
+            x += '  '
             while (y < a):
                 #print(eval1)
                 #print(a)
@@ -402,7 +400,7 @@ def main():
         print(fL)
         initX = input("Initial Point or Value?  ex.  (4,3,5)  ")
         iX = formatVector(initX)
-        print(componentsEnabled)
+        #print(componentsEnabled)
         minT = input("Start Time (seconds): ")
         maxT = input("End Time (seconds: ")
         # derivative   1st
@@ -421,7 +419,7 @@ def main():
 
         gluPerspective(45, (display[0]/display[1]), 0.1, 50.0)
 
-        glTranslate(0,0, -3)
+        glTranslate(0,0, -4)
         # glRotate(-45,0,0,0)
         glRotate(-90, 1, 0, 0)
         glRotate(-110, 0, 0, 1)
@@ -447,7 +445,7 @@ def main():
         global winM
         winM = winMax
 
-        while(t <= int(maxT)):
+        while(t <= float(maxT)):
             insVector = []
             for y in fL:
                 t2 = str(t)
@@ -456,7 +454,14 @@ def main():
                 vI = float(y)/winMax
                 insVector.append(vI)
 
-            t += 0.15
+
+            # ALPHA k
+            t += 0.08
+
+
+
+
+
             insVector[0] += (iX[0]/winMax)
             insVector[1] += (iX[1]/winMax)
             insVector[2] += (iX[2]/winMax)
