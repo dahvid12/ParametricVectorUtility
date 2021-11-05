@@ -219,6 +219,10 @@ def main():
             glRotate(0.8, 0, 0, 1)
         elif (keys[K_LEFT]):
             glRotate(-0.8, 0, 0, 1)
+        if(keys[K_UP]):
+            glRotate(-0.8,0,1,0)
+        elif(keys[K_DOWN]):
+             glRotate(0.8,0,1,0)
     
 
         #glRotatef(0, 0, 0, 0)
@@ -255,6 +259,10 @@ def main():
                     glRotate(0.5, 0, 0, 1)
                 elif (keys[K_LEFT]):
                     glRotate(-0.5, 0, 0, 1)
+                if(keys[K_UP]):
+                    glRotate(-0.8,0,1,0)
+                elif(keys[K_DOWN]):
+                    glRotate(0.8,0,1,0)
 
                 #glRotatef(0, 0, 0, 0)
                 glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)
@@ -419,7 +427,7 @@ def main():
 
         gluPerspective(45, (display[0]/display[1]), 0.1, 50.0)
 
-        glTranslate(0,0, -4)
+        glTranslate(0,0, -3.5)
         # glRotate(-45,0,0,0)
         glRotate(-90, 1, 0, 0)
         glRotate(-110, 0, 0, 1)
@@ -441,9 +449,9 @@ def main():
 
         testBounds.sort()
         # print(testBounds)
-        winMax = testBounds[2] * 0.12
+        winMax = testBounds[2] * 0.15
         global winM
-        winM = winMax
+        winM = winMax + 1
 
         while(t <= float(maxT)):
             insVector = []
@@ -504,4 +512,4 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    main() 
