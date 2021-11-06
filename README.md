@@ -21,9 +21,9 @@ The calculator requires OpenGL and Pygame to run the graphics, while the calculu
 Challenges: Due to the processing-intensive nature of 3D computer graphics, it was hard to make th eprogram run for large intervals of time on devices such as tablets. To solve this issue, I created my own memory management system that avoids unnecessary calculations by storing the data in a temporary list that is used to pause the program and make it seem as if the program is stilla ctively calculating values. The greatest challenge with the calculator was ensuring that the users’ typed equations are notmisinterpreted by the algorithms and libraries. As a solution to this issue, I programmed my ownset of vector and parametric algorithms that not only formatted data, but also performed the necessary scaling with derivatives to provide a seamless user experience.
 
 I hope to develop this into an online (published)  calculator that students can use to visualize th emulti-dimensional problems that are common in Physics 1-2 and Calculus courses.
-
+## Simple Kinematic system with 3-Dimensions and gravity.
 ![Screenshot (19)](https://user-images.githubusercontent.com/40839237/140453833-3eca0725-ebc0-4115-8e97-fab4ee3b5602.png)
-# Simple Kinematic system with 3-Dimensions and gravity.
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
