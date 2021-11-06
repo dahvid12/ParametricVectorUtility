@@ -23,6 +23,7 @@ Challenges: Due to the processing-intensive nature of 3D computer graphics, it w
 I hope to develop this into an online (published)  calculator that students can use to visualize th emulti-dimensional problems that are common in Physics 1-2 and Calculus courses.
 
 ![Screenshot (19)](https://user-images.githubusercontent.com/40839237/140453833-3eca0725-ebc0-4115-8e97-fab4ee3b5602.png)
+#Simple Kinematic system with 3 Dimensions
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
